@@ -16,7 +16,6 @@
 
     <ItemGroup>
       <PackageReference Include="InputSimulator" Version="1.0.4" />
-      <PackageReference Include="KeyboardInterceptor" Version="1.0.0" />
     </ItemGroup>
 
 </Project>

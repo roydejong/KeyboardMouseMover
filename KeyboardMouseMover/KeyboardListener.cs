@@ -24,21 +24,25 @@ public class KeyboardListener
         _interceptor.Stop();
     }
 
-    private void HandleInterceptedKey(Key key)
+    private void HandleInterceptedKey(KeyInterceptArgs args)
     {
-        switch (key)
+        switch (args.Key)
         {
             case Key.NumPad8:
                 _mouseMover.Up();
+                args.StopPropagation = true;
                 break;
             case Key.NumPad6:
                 _mouseMover.Right();
+                args.StopPropagation = true;
                 break;
             case Key.NumPad2:
                 _mouseMover.Down();
+                args.StopPropagation = true;
                 break;
             case Key.NumPad4:
                 _mouseMover.Left();
+                args.StopPropagation = true;
                 break;
         }
     }
