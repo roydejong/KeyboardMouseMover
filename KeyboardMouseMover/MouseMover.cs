@@ -4,7 +4,7 @@ using Timer = System.Threading.Timer;
 
 namespace KeyboardMouseMover;
 
-public class MouseMove
+public class MouseMover
 {
     private const int PixelSpeed = 1;
     private const float AccelerationOverTime = 1.01f;
