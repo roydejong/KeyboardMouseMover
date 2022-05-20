@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\pointer.png" />
+      <EmbeddedResource Include="Assets\PointerImage.png" />
+      <EmbeddedResource Include="Assets\PointerIcon.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="InputSimulator" Version="1.0.4" />
+      <PackageReference Include="KeyboardInterceptor" Version="1.0.0" />
+    </ItemGroup>
+
+</Project>
